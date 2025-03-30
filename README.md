@@ -3,7 +3,7 @@
   printf("Hello World!");
 ```
 #### /\*来点二次元\*/
-- 施工中
+<img src="https://github.com/Shimakaze-17900/Shimakaze-17900/blob/main/picture/xia.jpg" width="25%" height="auto" />
 
 #### 今日rp
 **1d100=62**
