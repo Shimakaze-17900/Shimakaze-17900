@@ -1,0 +1,38 @@
+name: Update Daily RP
+on:
+  schedule:
+    - cron: '0 16 * * *'  # 北京时间每天00:00（UTC+8对应UTC时间16:00）
+  workflow_dispatch:  # 允许手动触发
+
+jobs:
+  update-rp:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Generate and Replace RP
+        run: |
+          # 生成1-100的随机数
+          RANDOM_NUM=$(( $RANDOM % 100 + 1 ))
+
+          # 根据随机数生成评语
+          if [ $RANDOM_NUM -le 30 ]; then
+            COMMENT="今天的rp似乎有点低..."
+          elif [ $RANDOM_NUM -le 70 ]; then
+            COMMENT="普普通通的一天呢~"
+          else
+            COMMENT="rp这么高,快去写题!"
+          fi
+
+          # 替换README内容
+          sed -i "s/1d100=[0-9]\+/1d100=$RANDOM_NUM/g" README.md
+          sed -i "/今日rp/{n;n; s/\".*\"/\"$COMMENT\"/}" README.md
+
+      - name: Commit changes
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@users.noreply.github.com"
+          git add README.md
+          git commit -m "Auto update daily RP"
+          git push
