@@ -3,7 +3,7 @@
   printf("Hello World!");
 ```
 #### /\*来点二次元\*/
-- 这里还没有开工
+<img src="./picture/xia.jpg" alt="xia" style="zoom:25%;" />
 
 #### 今日rp
 **1d100=62**
