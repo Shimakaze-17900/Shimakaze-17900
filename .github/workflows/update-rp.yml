@@ -26,7 +26,7 @@ jobs:
           fi
 
           # 替换README内容
-          sed -i "s/1d100=[0-9]\+/1d100=$RANDOM_NUM/g" README.md
+          sed -i "s/\(**\)\{0,1\}1d100=[0-9]\+\(**\)\{0,1\}/**1d100=$RANDOM_NUM**/g" README.md
           sed -i "/今日rp/{n;n; s/\".*\"/\"$COMMENT\"/}" README.md
 
       - name: Commit changes
