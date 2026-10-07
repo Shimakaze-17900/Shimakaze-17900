@@ -10,6 +10,7 @@
 "今天的rp似乎有点低..."
 
 #### 我要成为pwn糕手!
+- edit:已向ai大人投降
 - [这里是我的周报](https://github.com/Shimakaze-17900/weekly)
 - [题目整理(完成至2025年6月)](https://github.com/Shimakaze-17900/question-compilation/)
   
