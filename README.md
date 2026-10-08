@@ -6,8 +6,8 @@
 <img src="https://github.com/Shimakaze-17900/Shimakaze-17900/blob/main/picture/xia.jpg" width="25%" height="auto" />
 
 #### 今日rp
-**1d100=15**
-"今天的rp似乎有点低..."
+**1d100=89**
+"rp爆表,快去写题！"
 
 #### 我要成为pwn糕手!
 - edit:已向ai大人投降
